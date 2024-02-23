@@ -1,0 +1,30 @@
+input[type="range"] {
+  width: 80%;
+  height: 25px;
+  background-color: #e0f7fa;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+datalist {
+  padding-left: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+}
+
+option {
+  padding: 0;
+}

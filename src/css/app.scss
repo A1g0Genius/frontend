@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vw;
+  .light {
+    width: 100vw;
+    height: 100vw;
+    color: black;
+    background-color: white;
+  }
+
+  .dark {
+    width: 100vw;
+    height: 100vw;
+    color: white;
+    background-color: black;
+  }
+}
