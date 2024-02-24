@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const timeZoneSlice = createSlice({
     name: 'timeZone',
     initialState: {
+        currentDate: new Date(),
         globalTime: 0,
         timeZonesList: [
             { name: 'UTC', offset: 0, },
@@ -33,13 +34,18 @@ const timeZoneSlice = createSlice({
             state.globalTime = action.payload.newTime
             // console.log(state.globalTime)
         },
+        updateDate: (state, action) => {
+            console.log(action.payload)
+            state.currentDate = action.payload
+        }
     },
 });
 
-export const { addTimeZone, removeTimeZone, reorderTimeZones, updateTimeZone } = timeZoneSlice.actions;
+export const { addTimeZone, removeTimeZone, reorderTimeZones, updateTimeZone, updateDate } = timeZoneSlice.actions;
 
 
 export const getGlobalTime = (state) => state.zones.globalTime
 export const getTimeZones = (state) => state.zones.timeZonesList
+export const getDate = (state) => state.zones.currentDate
 
 export default timeZoneSlice.reducer;

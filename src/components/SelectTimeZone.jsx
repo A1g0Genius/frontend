@@ -28,6 +28,7 @@ const SelectTimeZone = () => {
         name="timeZone"
         value={selectedTimeZone}
         onChange={handleTimeZoneChange}
+        style={{ fontSize: "1rem" }}
       >
         {data.map((ele) => {
           return (
@@ -37,7 +38,12 @@ const SelectTimeZone = () => {
           );
         })}
       </select>
-      <button onClick={AddTZ}>Add</button>
+      <button
+        style={{ fontSize: "1rem", marginRight: ".5rem", marginLeft: ".5rem" }}
+        onClick={AddTZ}
+      >
+        Add
+      </button>
     </>
   );
 };

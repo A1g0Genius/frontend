@@ -1,0 +1,39 @@
+.time-zone-list {
+  .slider-comp {
+    border-bottom: 0.1rem solid #cacaca !important;
+  }
+  .top {
+    padding: 0.2rem 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .zone-name,
+    .curr-time {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .curr-time {
+      padding: 0.2rem 2rem;
+      background-color: #cacaca;
+    }
+  }
+
+  .middle {
+    padding: 0.2rem 0.5rem 1rem 0.5rem;
+    display: flex;
+    justify-content: space-around;
+
+    .timeformat {
+      font-size: 1rem;
+    }
+
+    .dateformat {
+      font-size: 1rem;
+    }
+  }
+
+  .end {
+    padding: 0.2rem 1rem 1rem 1rem;
+  }
+}
