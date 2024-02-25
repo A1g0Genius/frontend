@@ -6,7 +6,6 @@ const ThemeBtn = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.themeState);
   const handleAppTheme = () => {
-    console.log("Clciked");
     dispatch(changeMode());
   };
   return (

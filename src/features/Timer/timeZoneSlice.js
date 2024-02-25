@@ -30,12 +30,9 @@ const timeZoneSlice = createSlice({
             state.timeZonesList.splice(endIndex, 0, removed);
         },
         updateTimeZone: (state, action) => {
-            // console.log(action.payload.newTime)
             state.globalTime = action.payload.newTime
-            // console.log(state.globalTime)
         },
         updateDate: (state, action) => {
-            console.log(action.payload)
             state.currentDate = action.payload
         }
     },

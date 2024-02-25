@@ -18,7 +18,7 @@ const TimeComponent = ({ name, offset }) => {
   const genDate = () => {
     let ind = 0;
     if (globalTime + offset >= 24) ind = 1;
-    else if (globalTime + offset <= 0) ind = -1;
+    else if (globalTime + offset < 0) ind = -1;
 
     let tmp = new Date(currDate);
     tmp.setDate(tmp.getDate() + ind);
@@ -50,7 +50,6 @@ const TimeComponent = ({ name, offset }) => {
     let numString = num.toString();
     let parts = numString.split(".");
     let res = parts[0];
-    console.log(res);
 
     if (!isNaN(parts[1])) {
       let tmp = Number(parts[1]) * 0.6;

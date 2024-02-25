@@ -9,7 +9,6 @@ const themeSlice = createSlice({
     initialState,
     reducers: {
         changeMode: (state, payload) => {
-            console.log(payload)
             if (state.themeState === 'light') state.themeState = "dark"
             else state.themeState = "light"
         }
